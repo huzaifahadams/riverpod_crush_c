@@ -27,8 +27,8 @@ class Counter extends StateNotifier<int?> {
     state = state == null ? 0 : null;
   }
 
-  void sub1() {
-    state = state == null ? 1 : state! - 1;
+   void sub1() {
+    state = (state == null || state == 1) ? 1 : state! - 1;
   }
 }
 
